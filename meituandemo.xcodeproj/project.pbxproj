@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C47DC91E126C718781BC52B /* libPods-meituandemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBAC526FF5256ACF05337A9 /* libPods-meituandemo.a */; };
+		F72683FF1CD995DE00FFF74F /* GetUrlString.m in Sources */ = {isa = PBXBuildFile; fileRef = F72683FE1CD995DE00FFF74F /* GetUrlString.m */; };
+		F72684021CD99D4D00FFF74F /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = F72684011CD99D4D00FFF74F /* NetWork.m */; };
 		F77E54E81CCE23A500E8C9D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F77E54E71CCE23A500E8C9D6 /* main.m */; };
 		F77E54EB1CCE23A600E8C9D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F77E54EA1CCE23A600E8C9D6 /* AppDelegate.m */; };
 		F77E54EE1CCE23A600E8C9D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77E54ED1CCE23A600E8C9D6 /* ViewController.m */; };
@@ -35,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7BBAC526FF5256ACF05337A9 /* libPods-meituandemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meituandemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BF2D6AF3C305714E3FA806 /* Pods-meituandemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meituandemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-meituandemo/Pods-meituandemo.release.xcconfig"; sourceTree = "<group>"; };
+		C344B3BDA2B5ACFD3810D1A0 /* Pods-meituandemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meituandemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-meituandemo/Pods-meituandemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F72683FD1CD995DE00FFF74F /* GetUrlString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUrlString.h; sourceTree = "<group>"; };
+		F72683FE1CD995DE00FFF74F /* GetUrlString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetUrlString.m; sourceTree = "<group>"; };
+		F72684001CD99D4D00FFF74F /* NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWork.h; sourceTree = "<group>"; };
+		F72684011CD99D4D00FFF74F /* NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWork.m; sourceTree = "<group>"; };
 		F77E54E31CCE23A500E8C9D6 /* meituandemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meituandemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77E54E71CCE23A500E8C9D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F77E54E91CCE23A600E8C9D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C47DC91E126C718781BC52B /* libPods-meituandemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +89,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EEA32D147F1099802B8C915 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C344B3BDA2B5ACFD3810D1A0 /* Pods-meituandemo.debug.xcconfig */,
+				A6BF2D6AF3C305714E3FA806 /* Pods-meituandemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B8B8409E758C0F38A01D993D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BBAC526FF5256ACF05337A9 /* libPods-meituandemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F72683FC1CD995A300FFF74F /* ToolClass */ = {
+			isa = PBXGroup;
+			children = (
+				F72683FD1CD995DE00FFF74F /* GetUrlString.h */,
+				F72683FE1CD995DE00FFF74F /* GetUrlString.m */,
+				F72684001CD99D4D00FFF74F /* NetWork.h */,
+				F72684011CD99D4D00FFF74F /* NetWork.m */,
+			);
+			name = ToolClass;
+			path = meituandemo;
+			sourceTree = "<group>";
+		};
 		F77E54DA1CCE23A500E8C9D6 = {
 			isa = PBXGroup;
 			children = (
+				F72683FC1CD995A300FFF74F /* ToolClass */,
 				F77E54E51CCE23A500E8C9D6 /* meituandemo */,
 				F77E54FF1CCE23A600E8C9D6 /* meituandemoTests */,
 				F77E550A1CCE23A600E8C9D6 /* meituandemoUITests */,
 				F77E54E41CCE23A500E8C9D6 /* Products */,
+				7EEA32D147F1099802B8C915 /* Pods */,
+				B8B8409E758C0F38A01D993D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F77E55101CCE23A600E8C9D6 /* Build configuration list for PBXNativeTarget "meituandemo" */;
 			buildPhases = (
+				03C8A4396EA1684B8B866CAD /* 📦 Check Pods Manifest.lock */,
 				F77E54DF1CCE23A500E8C9D6 /* Sources */,
 				F77E54E01CCE23A500E8C9D6 /* Frameworks */,
 				F77E54E11CCE23A500E8C9D6 /* Resources */,
+				0700E851FAC9391C9A232B88 /* 📦 Embed Pods Frameworks */,
+				AC52E92A88057F582D110FE2 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,14 +311,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03C8A4396EA1684B8B866CAD /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0700E851FAC9391C9A232B88 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-meituandemo/Pods-meituandemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC52E92A88057F582D110FE2 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-meituandemo/Pods-meituandemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F77E54DF1CCE23A500E8C9D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F77E54EE1CCE23A600E8C9D6 /* ViewController.m in Sources */,
+				F72684021CD99D4D00FFF74F /* NetWork.m in Sources */,
 				F77E54EB1CCE23A600E8C9D6 /* AppDelegate.m in Sources */,
 				F77E54E81CCE23A500E8C9D6 /* main.m in Sources */,
+				F72683FF1CD995DE00FFF74F /* GetUrlString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,8 +505,10 @@
 		};
 		F77E55111CCE23A600E8C9D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C344B3BDA2B5ACFD3810D1A0 /* Pods-meituandemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = meituandemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = winchannel.meituandemo;
@@ -420,8 +518,10 @@
 		};
 		F77E55121CCE23A600E8C9D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6BF2D6AF3C305714E3FA806 /* Pods-meituandemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = meituandemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = winchannel.meituandemo;
@@ -496,6 +596,7 @@
 				F77E55121CCE23A600E8C9D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F77E55131CCE23A600E8C9D6 /* Build configuration list for PBXNativeTarget "meituandemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +605,7 @@
 				F77E55151CCE23A600E8C9D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F77E55161CCE23A600E8C9D6 /* Build configuration list for PBXNativeTarget "meituandemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +614,7 @@
 				F77E55181CCE23A600E8C9D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
