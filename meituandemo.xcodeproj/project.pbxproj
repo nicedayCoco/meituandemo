@@ -18,6 +18,9 @@
 		F77E54F61CCE23A600E8C9D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77E54F41CCE23A600E8C9D6 /* LaunchScreen.storyboard */; };
 		F77E55011CCE23A600E8C9D6 /* meituandemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F77E55001CCE23A600E8C9D6 /* meituandemoTests.m */; };
 		F77E550C1CCE23A600E8C9D6 /* meituandemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F77E550B1CCE23A600E8C9D6 /* meituandemoUITests.m */; };
+		F7C5D48E1CDC3EA000047CD3 /* MTTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C5D48D1CDC3EA000047CD3 /* MTTabBarViewController.m */; };
+		F7C5D4931CDC3F7A00047CD3 /* MTTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C5D4921CDC3F7A00047CD3 /* MTTabBarView.m */; };
+		F7C5D4961CDC436400047CD3 /* MTTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C5D4951CDC436400047CD3 /* MTTabBarButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,13 @@
 		F77E55071CCE23A600E8C9D6 /* meituandemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meituandemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77E550B1CCE23A600E8C9D6 /* meituandemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = meituandemoUITests.m; sourceTree = "<group>"; };
 		F77E550D1CCE23A600E8C9D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7C5D48C1CDC3EA000047CD3 /* MTTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTabBarViewController.h; sourceTree = "<group>"; };
+		F7C5D48D1CDC3EA000047CD3 /* MTTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTabBarViewController.m; sourceTree = "<group>"; };
+		F7C5D4911CDC3F7A00047CD3 /* MTTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTabBarView.h; sourceTree = "<group>"; };
+		F7C5D4921CDC3F7A00047CD3 /* MTTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTabBarView.m; sourceTree = "<group>"; };
+		F7C5D4941CDC436400047CD3 /* MTTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTabBarButton.h; sourceTree = "<group>"; };
+		F7C5D4951CDC436400047CD3 /* MTTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTabBarButton.m; sourceTree = "<group>"; };
+		F7C5D4971CDC48AE00047CD3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +154,7 @@
 		F77E54E51CCE23A500E8C9D6 /* meituandemo */ = {
 			isa = PBXGroup;
 			children = (
+				F7C5D48B1CDC399600047CD3 /* Home */,
 				F77E54E91CCE23A600E8C9D6 /* AppDelegate.h */,
 				F77E54EA1CCE23A600E8C9D6 /* AppDelegate.m */,
 				F77E54EC1CCE23A600E8C9D6 /* ViewController.h */,
@@ -161,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				F77E54E71CCE23A500E8C9D6 /* main.m */,
+				F7C5D4971CDC48AE00047CD3 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,6 +193,35 @@
 				F77E550D1CCE23A600E8C9D6 /* Info.plist */,
 			);
 			path = meituandemoUITests;
+			sourceTree = "<group>";
+		};
+		F7C5D48B1CDC399600047CD3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F7C5D4901CDC3F2D00047CD3 /* View */,
+				F7C5D48F1CDC3EF000047CD3 /* Controller */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		F7C5D48F1CDC3EF000047CD3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7C5D48C1CDC3EA000047CD3 /* MTTabBarViewController.h */,
+				F7C5D48D1CDC3EA000047CD3 /* MTTabBarViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F7C5D4901CDC3F2D00047CD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7C5D4911CDC3F7A00047CD3 /* MTTabBarView.h */,
+				F7C5D4921CDC3F7A00047CD3 /* MTTabBarView.m */,
+				F7C5D4941CDC436400047CD3 /* MTTabBarButton.h */,
+				F7C5D4951CDC436400047CD3 /* MTTabBarButton.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,9 +406,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77E54EE1CCE23A600E8C9D6 /* ViewController.m in Sources */,
+				F7C5D48E1CDC3EA000047CD3 /* MTTabBarViewController.m in Sources */,
 				F72684021CD99D4D00FFF74F /* NetWork.m in Sources */,
 				F77E54EB1CCE23A600E8C9D6 /* AppDelegate.m in Sources */,
+				F7C5D4961CDC436400047CD3 /* MTTabBarButton.m in Sources */,
 				F77E54E81CCE23A500E8C9D6 /* main.m in Sources */,
+				F7C5D4931CDC3F7A00047CD3 /* MTTabBarView.m in Sources */,
 				F72683FF1CD995DE00FFF74F /* GetUrlString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,7 +553,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/meituandemo/PrefixHeader.pch";
 				INFOPLIST_FILE = meituandemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = winchannel.meituandemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,7 +568,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/meituandemo/PrefixHeader.pch";
 				INFOPLIST_FILE = meituandemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = winchannel.meituandemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
