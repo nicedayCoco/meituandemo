@@ -12,7 +12,7 @@
 
 @protocol mttabarDelegate <NSObject>
 @optional
-- (void)taBar:(MTTabBarView *)tabBar didselectedButtonFrom:(int)from to:(int)to;
+- (void)tabBar:(MTTabBarView *)tabBar didselectedButtonFrom:(int)from to:(int)to;
 @end
 
 

@@ -14,6 +14,11 @@
 #define RGB(r, g, b)                        RGBA(r, g, b, 1.0f)
 #define navigationBarColor RGB(33, 192, 174)
 #define separaterColor RGB(200, 199, 204)
+//字体
+#define kFONT16                  [UIFont systemFontOfSize:16.0f]
+#define kFONT15                  [UIFont systemFontOfSize:15.0f]
+#define kFONT12                  [UIFont systemFontOfSize:12.0f]
+#define kFONT10                  [UIFont systemFontOfSize:10.0f]
 
 
 // Include any system framework and library headers here that should be included in all compilation units.
